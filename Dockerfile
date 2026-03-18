@@ -62,6 +62,7 @@ WORKDIR /app
 COPY --from=builder /opt/venv /opt/venv
 
 COPY config.defaults.toml ./config.toml
+COPY config.defaults.toml ./
 COPY app ./app
 COPY _public ./_public
 COPY main.py ./
